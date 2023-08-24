@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+define('RAMPHP_START', microtime(true));
+
+require __DIR__ . '/vendor/autoload.php';
+error_reporting(0);
+parse_str(implode('&', array_slice($argv, 5)), $_GET);
+try{
+    //if($argc <= 5){
+        /*for($i=$argc;$i>1;$i--){
+            $argv[$i] = $argv[$i -1];
+        }*/
+      //  $argv[1] = __DIR__."\..\..\..\\";
+    //}
+    //print_r($argv);
+   $ram = new \Ramphp\Kernel\RAMPHPCLI($argv[1],$argv[2],$argv[3],$argv[4]??null);
+}catch(\Exception $e){
+   print($e);
+}
+
+error_reporting(1);

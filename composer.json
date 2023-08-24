@@ -1,0 +1,37 @@
+{
+    "name": "ramphp/kernel",
+    "description": "VIKSHRO's RAMPHP kernel Packages",
+    "version": "1.0.0",
+    "keywords": ["vikshro","frameworks","security","vikcrypt","crypto","encryption","decryption","authentication","vwt","vikcrpyto web tokens"],
+    "type": "library",
+    "license": "proprietary",
+    "source": {
+        "url": "https://vikshro.in/RAMPHP",
+        "type": "website",
+        "reference": "VIKSHRO"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ramphp\\Kernel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VIKSHRO",
+            "email": "ramphp@vikshro.in"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0",
+        "vikshrogit/vikcrypt": "^1.0",
+        "ramphp/router": "^1.0",
+        "ext-mysqli": "*"
+    },
+    "config": {
+        "platform": {
+            "php": "8.0"
+        }
+    }
+}

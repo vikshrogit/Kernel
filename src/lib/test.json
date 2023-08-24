@@ -1,0 +1,79 @@
+[
+  {
+    "table": "role",
+    "schema": [
+      {
+        "column": "id",
+        "key": "PRI",
+        "type": "bigint",
+        "default": null,
+        "ctype": "bigint(20)",
+        "null": "NO",
+        "permit": "select,insert,update,references"
+      },
+      {
+        "column": "name",
+        "key": "UNI",
+        "type": "varchar",
+        "default": null,
+        "ctype": "varchar(200)",
+        "null": "NO",
+        "permit": "select,insert,update,references"
+      },
+      {
+        "column": "role_tags",
+        "key": "",
+        "type": "longtext",
+        "default": null,
+        "ctype": "longtext",
+        "null": "NO",
+        "permit": "select,insert,update,references"
+      },
+      {
+        "column": "permissions",
+        "key": "",
+        "type": "longtext",
+        "default": null,
+        "ctype": "longtext",
+        "null": "YES",
+        "permit": "select,insert,update,references"
+      },
+      {
+        "column": "created_at",
+        "key": "",
+        "type": "datetime",
+        "default": "CURRENT_TIMESTAMP",
+        "ctype": "datetime",
+        "null": "NO",
+        "permit": "select,insert,update,references"
+      },
+      {
+        "column": "modified_at",
+        "key": "",
+        "type": "datetime",
+        "default": "CURRENT_TIMESTAMP",
+        "ctype": "datetime",
+        "null": "NO",
+        "permit": "select,insert,update,references"
+      },
+      {
+        "column": "deleted_at",
+        "key": "",
+        "type": "datetime",
+        "default": null,
+        "ctype": "datetime",
+        "null": "YES",
+        "permit": "select,insert,update,references"
+      },
+      {
+        "column": "status",
+        "key": "",
+        "type": "int",
+        "default": "1",
+        "ctype": "int(11)",
+        "null": "NO",
+        "permit": "select,insert,update,references"
+      }
+    ]
+  }
+]
